@@ -41,6 +41,7 @@ app.delete('/todos/:id', (req, res) => {
 });
 
 app.listen(PORT, () => {
+  console.log(`Server running`);
   console.log(`Server running at http://localhost:${PORT}`);
   const { exec } = require('child_process');
   exec(`start http://localhost:${PORT}`);
